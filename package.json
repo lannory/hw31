@@ -3,7 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://lannory.github.io/hw31",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -11,6 +14,8 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
+    "gh-pages": "^6.3.0",
+    "github-pages": "^3.0.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0"
